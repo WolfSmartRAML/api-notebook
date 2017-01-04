@@ -6,6 +6,7 @@ before_script:
   - npm install -g grunt-cli
   - npm install -g phantomjs
   - grunt test
+script: phantomjs test/index.html
 before_install:
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
